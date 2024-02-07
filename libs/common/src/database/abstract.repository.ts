@@ -1,9 +1,8 @@
 import { FilterQuery, Model, Types, UpdateQuery } from "mongoose";
-import { abstractDocument } from "./abstract.schema";
+import { AbstractDocument } from "./abstract.schema";
 import { Logger, NotFoundException } from "@nestjs/common";
-import { NotFoundError, filter } from "rxjs";
 
-export abstract class abstracRepository<TDocument extends abstractDocument> {
+export abstract class AbstracRepository<TDocument extends AbstractDocument> {
     
     protected abstract readonly logger: Logger 
 
